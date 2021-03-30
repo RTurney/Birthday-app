@@ -35,8 +35,8 @@ Main page:
 
 Congratulations page:
 
-<img src='./assets/Congratulations.png'
+<img src='./assets/Congratulations.png'>
 
 Page with days left until your birthday:
 
-<imng src='./assets/DaysLeft.png'> 
+<img src='./assets/DaysLeft.png'>
