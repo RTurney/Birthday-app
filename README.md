@@ -40,3 +40,35 @@ Congratulations page:
 Page with days left until your birthday:
 
 <img src='./assets/DaysLeft.png'>
+
+### User stories:
+
+```
+As an excited child,
+So that I can be welcomed to the page,
+I would like the page to say hello, when loaded.
+```
+
+```
+As an excited child,
+So that I can be sure it's my birthday I'm checking,
+I would like the app to take my name.
+```
+
+```
+As an excited child,
+So that I can count down the days until my birthday,
+I would like to be able to put my birthday into the app.
+```
+
+```
+As an excited child,
+So that I can work out how many days are left until my birthday,
+I would like the app to tell me how many days are left.
+```
+
+```
+As an excited child,
+So that I can feel special on my special day,
+I would like the app to congratulate me if it's my birthday today.
+```
