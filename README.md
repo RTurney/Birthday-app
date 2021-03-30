@@ -72,3 +72,12 @@ As an excited child,
 So that I can feel special on my special day,
 I would like the app to congratulate me if it's my birthday today.
 ```
+
+### Tests and test coverage:
+
+To run the tests for this app, please run the following line in the command line:
+```
+rspec
+```
+
+At its current implementation, there are no tests written for this app. With zero coverage.
