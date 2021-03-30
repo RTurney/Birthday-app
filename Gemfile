@@ -8,8 +8,12 @@ gem 'sinatra'
 gem 'webrick'
 gem 'rubocop'
 
+
 group :test do
   gem 'rspec'
   gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'simplecov'
+  gem 'simplecov-console'
+  gem 'rubocop-rspec'
 end
