@@ -6,6 +6,6 @@ class Birthday < Sinatra::Base
   end
 
   post '/birthday' do
-    'Happy Birthday Markus'
+    'Happy Birthday ' + params[:name]
   end
 end
