@@ -30,23 +30,23 @@ And then visit localhost: 9292 in your browser of choice.
 
 You should be met with this page when you run the app correctly:
 
-<img src="./assets/Homepage.png" width='200' height='200'>
+<img src="./assets/Homepage.png">
 
 You can input your name:
 
-<img src="./assets/NameInput.png" width='200' height='200'>
+<img src="./assets/NameInput.png">
 
 And then your birthday:
 
-<img src="./assets/DateInput.png" width='200' height='200'>
+<img src="./assets/DateInput.png">
 
 If your birthday is today (congrats by the way) you should see:
 
-<img src="./assets/Congrats.png" width='200' height='200'>
+<img src="./assets/Congrats.png">
 
 Otherwise you will see how many days left you have to wait:
 
-<img src="./assets/DaysLeftPage.png" width='200' height='200'> 
+<img src="./assets/DaysLeftPage.png"> 
 
 ### Wireframe:
 
