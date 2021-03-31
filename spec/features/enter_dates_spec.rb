@@ -1,6 +1,6 @@
+# frozen_string_literal: true
 
 feature 'Enter birthday date' do
-
   scenario 'a user enters their birthday' do
     visit('/')
     fill_in 'name', with: 'Markus'

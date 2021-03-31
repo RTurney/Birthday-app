@@ -1,4 +1,5 @@
+# frozen_string_literal: true
 
 def birthday_calculator(num)
-  0
+  num
 end
