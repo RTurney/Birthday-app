@@ -3,13 +3,15 @@
 #Birthday calculator class
 class Birthday_calculator
   def initialize
-    @today = Time.new.strftime('%d/%m').split('/').join.to_i
+    @today = Date.today
   end
 
-  def calculate_days(birthday)
-    bday = birthday.split('/').join.to_i
+  def calculate_days(day, month)
+    birthday = Date.new(Date.today.year, month.to_i, day.to_i)
 
-    return 0 if is_today?(bday)
+    return 0 if is_today?(birthday)
+
+    return (birthday - @today).to_i
   end
 
   def is_today?(birthday)
