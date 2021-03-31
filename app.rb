@@ -10,6 +10,7 @@ class Birthday < Sinatra::Base
 
   post '/birthday' do
     @name = params[:name]
+    p params.inspect
     erb(:birthday)
   end
 end

@@ -3,7 +3,8 @@
 require 'birthday_calculator'
 
 describe 'birthday calculator' do
-  it 'returns an integer' do
-    expect(birthday_calculator(0)).to eq 0
+
+  it "will return 0 if birthday is today" do
+    expect(birthday_calculator("31/03")).to eq 0
   end
 end
