@@ -2,6 +2,6 @@ require 'sinatra'
 
 class Birthday < Sinatra::Base
   get '/' do
-    'Hello There!'
+    erb(:index)
   end
 end
