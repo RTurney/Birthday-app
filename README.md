@@ -1,4 +1,4 @@
-# Birthday Greeter App
+# Birthday Greeter App
 
  This is a small web app for users to calculate how many days remain until their Birthday.
  If it is a user's birthday, the app will congratulate them on surviving another year.
