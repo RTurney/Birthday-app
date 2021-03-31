@@ -8,9 +8,12 @@ class Birthday_calculator
 
   def calculate_days(day, month)
     birthday = birthday_converter(day, month)
-    
+
     return 0 if is_today?(birthday)
 
+     if Date.today >= birthday
+       birthday = Date.new((Date.today.year + 1), month.to_i, day.to_i)
+     end
     return (birthday - @today).to_i
   end
 
