@@ -1,18 +1,18 @@
 # frozen_string_literal: true
 
+#Birthday calculator class
 class Birthday_calculator
-
   def initialize
-    @today = Time.new.strftime("%d/%m").split('/').join().to_i
+    @today = Time.new.strftime('%d/%m').split('/').join.to_i
   end
 
   def calculate_days(birthday)
-    bday = birthday.split('/').join().to_i
+    bday = birthday.split('/').join.to_i
 
-    if bday == @today
-      return 0
-    end
+    return 0 if is_today?(bday)
   end
 
-
+  def is_today?(birthday)
+    birthday == @today
+  end
 end
