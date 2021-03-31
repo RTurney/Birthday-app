@@ -1,5 +1,6 @@
-feature 'Enter name' do
+# frozen_string_literal: true
 
+feature 'Enter name' do
   scenario 'a user enters their name' do
     visit('/')
     fill_in 'name', with: 'Cletus'
