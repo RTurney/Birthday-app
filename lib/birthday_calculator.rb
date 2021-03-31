@@ -7,14 +7,20 @@ class Birthday_calculator
   end
 
   def calculate_days(day, month)
-    birthday = Date.new(Date.today.year, month.to_i, day.to_i)
-
+    birthday = birthday_converter(day, month)
+    
     return 0 if is_today?(birthday)
 
     return (birthday - @today).to_i
   end
 
+
+  private #----------------------------
   def is_today?(birthday)
     birthday == @today
+  end
+
+  def birthday_converter(day, month)
+    Date.new(Date.today.year, month.to_i, day.to_i)
   end
 end
