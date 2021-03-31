@@ -23,7 +23,30 @@ bundle
 ```
 
 To run the app:
+```
+rackup
+```
+And then visit localhost: 9292 in your browser of choice.
 
+You should be met with this page when you run the app correctly:
+
+<img src="./assets/Homepage.png" width='200' height='200'>
+
+You can input your name:
+
+<img src="./assets/NameInput.png" width='200' height='200'>
+
+And then your birthday:
+
+<img src="./assets/DateInput.png" width='200' height='200'>
+
+If your birthday is today (congrats by the way) you should see:
+
+<img src="./assets/Congrats.png" width='200' height='200'>
+
+Otherwise you will see how many days left you have to wait:
+
+<img src="./assets/DaysLeftPage.png" width='200' height='200'> 
 
 ### Wireframe:
 
@@ -79,5 +102,6 @@ To run the tests for this app, please run the following line in the command line
 ```
 rspec
 ```
+<img src='./assets/TestCoverage.png'>
 
-At its current implementation, there are no tests written for this app. With zero coverage.
+At the current version all 9 tests are passing with 100% coverage.

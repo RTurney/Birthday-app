@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
 require 'sinatra'
+
 require_relative './lib/birthday_calculator'
 # Main app class. Inherits from Sinatra base.
 class Birthday < Sinatra::Base
-  configure :development do
-    register Sinatra::Reloader
-  end
-  
+
   get '/' do
     erb(:index)
   end
