@@ -4,6 +4,10 @@ require 'sinatra'
 require_relative './lib/birthday_calculator'
 # Main app class. Inherits from Sinatra base.
 class Birthday < Sinatra::Base
+  configure :development do
+    register Sinatra::Reloader
+  end
+  
   get '/' do
     erb(:index)
   end
@@ -14,9 +18,6 @@ class Birthday < Sinatra::Base
     @day = params[:day].to_s
     monthYear = params[:month]
     @month = monthYear.split('-')[1].to_s
-
-    p params.inspect
-    p Date.today
 
     if @bday_calculator.calculate_days(@day, @month) == 0
       erb(:birthday)

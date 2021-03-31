@@ -1,21 +1,75 @@
-<h1>Hello There!</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Birthday greeter</title>
+    <style>
+      body {
+        background-color: lightblue;
+        text-align: center;
+      }
+      form {
+      }
+      h1 {
+        padding-top: 200px;
+        padding-bottom: 100px;
+      }
+      .name-section {
+        padding-bottom: 20px;
+      }
+      .date-section {
+        display: flex;
+        justify-content: center;
+      }
+      label {
+        display: block;
+        padding-bottom: 5px;
+        font-size: x-large;
+      }
+      .day-container {
+        margin: 5px;
+      }
+      .month-container {
+        margin: 5px;
+      }
+      button {
+        width: 400px;
+      }
+    </style>
 
-<form action="/birthday" method="post">
-  <label for="name">
-    What's your name?
-  </label>
-  <input type="text" name="name">
-  <br/> <br/>
-  <label for="day">
-    Day
-  </label>
-  <input type="number" name="day">
-  <label for="month">
-    Month
-  </label>
-  <input type="month" name="month" min="1900-01" max="2020-12-31">
-  <br>
-  <button type="submit" value="Submit">
-    Go!
-  </button>
-</form>
+  </head>
+  <body>
+    <h1>Hello There!</h1>
+
+    <form action="/birthday" method="post">
+      <div class="name-section">
+        <label for="name">
+          What's your name?
+        </label>
+        <input type="text" name="name" style="width:200px;">
+      </div>
+
+
+      <div class="date-section">
+        <div class="day-container">
+          <label for="day">
+            Day
+          </label>
+          <input type="number" name="day" style="height:18px;">
+        </div>
+        <div class="month-container">
+          <label for="month">
+            Month
+          </label>
+          <input type="month" name="month" min="1900-01" max="2020-12-31">
+        </div>
+      </div>
+
+      <br>
+
+      <button type="submit" value="Submit">
+        Go!
+      </button>
+    </form>
+  </body>
+</html>
